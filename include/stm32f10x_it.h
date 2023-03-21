@@ -7,7 +7,7 @@
 
 #include "stm32f10x.h"
 
-extern volatile uint32_t time_1kHz;
+extern volatile uint32_t time_10us;
 
 void NMI_Handler(void);
 void HardFault_Handler(void);

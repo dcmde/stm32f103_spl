@@ -1,6 +1,6 @@
 #include "stm32f10x_it.h"
 
-volatile uint32_t time_1kHz;
+volatile uint32_t time_10us;
 
 void NMI_Handler(void) {
 }
@@ -39,7 +39,7 @@ void PendSV_Handler(void) {
 }
 
 void SysTick_Handler(void) {
-    --time_1kHz;
+    --time_10us;
 }
 
 /*void PPP_IRQHandler(void)
